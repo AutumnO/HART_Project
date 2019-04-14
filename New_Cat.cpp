@@ -65,10 +65,9 @@ int main()
     getline(cin, cat_name);
     
     cout << endl << "Sex: ";
-    cin >> cat_sex;
+    getline(cin, cat_sex);
     
     cout << endl << "Spayed/Neutered?: ";
-    getline(cin, fixed_status);
     getline(cin, fixed_status);
     
     cout << endl << "Date of Birth: ";
@@ -139,7 +138,7 @@ int main()
     fout << "</head>" << "\n";
     fout << "\n";
     
-    
+    fout << "<font size=\"+2\">";
     fout << "<h1><pre>";          
     fout << "\n";
     fout << "General Profile";
@@ -149,49 +148,49 @@ int main()
     fout << "<body>" << "\n";
     fout << "<ul>" << "\n";    // Opens list
     
-    fout << "<li>ID#:" << "\n";
+    fout << "<li><i>ID#:</i>" << "\n";
     fout << "<span id=\"ID\">" << cat_id << "</span> <span id=\"ID_button\"><button onclick=\"editText(&#39;ID&#39;)\">Edit</button></span> </li> <br>" << "\n";
     
-    fout << "<li>Name:" << endl;
+    fout << "<li><i>Name:</i>" << endl;
     fout << "<span id=\"catname\">" << cat_name << "</span> <span id=\"catname_button\"> <button onclick=\"editText(&#39;catname&#39;)\"> Edit </button> </span> </li> <br>" << "\n";
 
-    fout << "<li>Sex:" << "\n";
+    fout << "<li><i>Sex:</i>" << "\n";
     fout << "<span id=\"catsex\">" << cat_sex << "</span> <span id=\"catsex_button\"><button onclick=\"editText(&#39;catsex&#39;)\">Edit</button></span> </li> <br>" << "\n";
 
-    fout << "<li>Date of Birth:" << "\n";
+    fout << "<li><i>Date of Birth:</i>" << "\n";
     fout << "<span id=\"birthday\">" << cat_birthday << "</span> <span id=\"birthday_button\"><button onclick=\"editText(&#39;birthday&#39;)\">Edit</button></span> </li> <br>" << "\n";
 
-    fout << "<li>Age:" << "\n";
+    fout << "<li><i>Age:</i>" << "\n";
     fout << "<span id=\"age\">" << cat_age << "</span> <span id=\"age_button\"><button onclick=\"editText(&#39;age&#39;)\">Edit</button></span> </li> <br>" << "\n";
 
-    fout << "<li>Intake Date:" << "\n";
+    fout << "<li><i>Intake Date:</i>" << "\n";
     fout << "<span id=\"intakedate\">" << cat_intake_date << "</span> <span id=\"intakedate_button\"><button onclick=\"editText(&#39;intakedate&#39;)\">Edit</button></span> </li> <br>"  << "\n";
 
-    fout << "<li>Spayed/Neutered?:" << "\n";
+    fout << "<li><i>Spayed/Neutered?:</i>" << "\n";
     fout << "<span id=\"spayed\">" << fixed_status << "</span> <span id=\"spayed_button\"><button onclick=\"editText(&#39;spayed&#39;)\">Edit</button></span> </li> <br>" << "\n";
 
-    fout << "<li># of times returned(if not returned put 0):" << "\n";
+    fout << "<li><i># of times returned(if not returned put 0):</i>" << "\n";
     fout << "<span id=\"returnnum\">" << repeat_intake << "</span> <span id=\"returnnum_button\"><button onclick=\"editText(&#39;returnnum&#39;)\">Edit</button></span> </li> <br>" << "\n";
 
-    fout << "<li>Appearance:" << "\n";
+    fout << "<li><i>Appearance:</i>" << "\n";
     fout << "<span id=\"appearance\">" << cat_appearance << "</span> <span id=\"appearance_button\"><button onclick=\"editText(&#39;appearance&#39;)\">Edit</button></span> </li> <br>" << "\n";
 	
-    fout << "<li>Medications:" << "\n";
+    fout << "<li><i>Medications:</i>" << "\n";
     fout << "<span id=\"medication\">" << medications << "</span> <span id=\"medication_button\"><button onclick=\"editText(&#39;medication&#39;)\">Edit</button></span> </li> <br>" << "\n";
 
-    fout << "<li>Mediaction Instructions:" << "\n";
+    fout << "<li><i>Medication Instructions:</i>" << "\n";
     fout << "<span id=\"medinstructions\">" << meds_instructions << "</span> <span id=\"medinstructions_button\"><button onclick=\"editText(&#39;medinstructions&#39;)\">Edit</button></span> </li> <br>" << "\n";
 
-    fout << "<li>Current Health Problems:" << "\n";
+    fout << "<li><i>Current Health Problems:</i>" << "\n";
     fout << "<span id=\"problems\">" << current_health_problems << "</span> <span id=\"problems_button\"><button onclick=\"editText(&#39;problems&#39;)\">Edit</button></span> </li> <br>" << "\n";
 
-    fout << "<li>Treated Health Problems:" << "\n"; 
+    fout << "<li><i>Treated Health Problems:</i>" << "\n"; 
     fout << "<span id=\"treated\">" << treated_health_problems << "</span> <span id=\"treated_button\"><button onclick=\"editText(&#39;treated&#39;)\">Edit</button></span> </li> <br>"  << "\n";
 
-    fout << "<li>Potential Adoptors:" << "\n";
+    fout << "<li><i>Potential Adopters:</i>" << "\n";
     fout << "<span id=\"suiters\">" << adoptees << "</span> <span id=\"suiters_button\"><button onclick=\"editText(&#39;suiters&#39;)\">Edit</button></span> </li> <br>" << "\n";
 
-    fout << "<li>Other Notes:" << "\n";
+    fout << "<li><i>Other Notes:</i>" << "\n";
     fout << "<span id=\"notes\">" << other_notes << "</span> <span id=\"notes_button\"><button onclick=\"editText(&#39;notes&#39;)\">Edit</button></span> </li> <br>" << "\n";
     
     fout << "</ul>" << "\n";	// Closes list
