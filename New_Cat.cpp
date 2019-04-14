@@ -129,7 +129,7 @@ int main()
     fout << "            span_id = id;" << "\n";
     fout << "            let button_span = span_id + \"_button\";" << "\n";
     fout << "            let span_text = document.getElementById(span_id).children[0].value;" << "\n";
-    fout << "            let button_content = \"<button onclick=\\\"editText('\" + id + \"')\\\">Edit</button>;\"" << "\n";
+    fout << "            let button_content = \"<button onclick=\\\"editText('\" + id + \"')\\\">Edit</button>\"" << "\n"; // put semi colon button>;\""
     fout << "            document.getElementById(button_span).innerHTML = button_content;" << "\n";
     fout << "            document.getElementById(span_id).innerHTML = span_text;" << "\n";
     fout << "        }" << "\n";
@@ -145,7 +145,7 @@ int main()
     fout << "\n";
     fout << "</pre></h1>";
     
-    fout << "<body>" << "\n";
+    fout << "<body style=\"background-color:#ffc8f7\">" << "\n";
     fout << "<ul>" << "\n";    // Opens list
     
     fout << "<li><i>ID#:</i>" << "\n";
